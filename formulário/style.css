@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#705ABF), to(#A25EBF));
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    position: relative;
+    height: 90%;
+    width: 40%;
+    left: 30%;
+    top: 5%;
+}
+h1{
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 600;
+}
+#container_cadastro{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+#container_cadastro h1{
+    margin-top: 55px;
+}
+#campos_cadastro{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0/ 0;
+    float: left;
+    width: 80%;
+}
+#campos_cadastro label{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.resposta_cadastro{
+    width: 95%;
+    height: 35px;
+    box-shadow:inset 1px 1px 12px #c7c2c2;
+    border-radius: 0.7em;
+    margin-top: 2%;
+    padding: 0 0.7rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    border-color: #0000004f;
+}
+
+.botao_enviar{
+    position: relative;
+    width: 25%;
+    height: 15%;
+    top: 18%;
+    left: 35%;
+    color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    background: -webkit-gradient(linear, left top, right top, from(#705ABF), to(#A25EBF));
+    cursor: pointer;
+}
