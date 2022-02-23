@@ -1,0 +1,80 @@
+.container-twitter{
+   display: block;
+   position: absolute;
+   width: 40%;
+   height: 23%;
+   border: 1px solid #cccc;
+   left: 30%;
+   top: 30%;
+}
+
+#logo-nike{
+   display: block;
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   margin-left: 15px;
+   margin-top: 11px;
+}
+
+.nickname-container{
+   display: inline;
+   position: absolute;
+   margin: 13px 0 0 72px;
+}
+
+.nickname{
+   font-weight: 700;
+   font-family: 'roboto', sans-serif;
+   font-size: 15px;
+}
+
+.icone-verificado{
+   position: absolute;
+   top: 3px;
+}
+
+.date-post{
+   margin-left: 24px;
+   color: #536471;
+   font-family: 'reboto',sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+}
+.separator-date{
+   width: 4px;
+   height: 4px;
+   margin: 0 6px 0 6px;
+   margin-bottom: 3px;
+}
+
+.post-twitter{
+   display: block;
+   text-align: start;
+   width: 430px;
+   height: 72px;
+   margin: 39px 0 0 73px;
+   font-family: 'reboto', sans-serif;
+   font-weight: 400;
+
+}
+
+.container-interation{
+   display: block;
+   align-items: center;
+   position: relative;
+   margin: 16px 19px 0 13px;
+   
+}
+
+.container-interation  button{
+   margin-left:60px;
+   cursor: pointer;
+   background: none;
+   border: none;
+}
+
+.container-interation span{
+   padding-left: 18px;
+   color: #536471;
+}
