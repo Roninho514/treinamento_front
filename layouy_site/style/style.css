@@ -1,0 +1,56 @@
+body{
+   display: flex;
+   flex-direction: column;
+}
+header{
+   width: 100vw;
+   height: 130px;
+}
+.contat-container{
+   background-color: rgb(002, 000, 133);
+   width: 100vw;
+   height: 30px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+.contat-container span{
+   color: #ffffff;
+   margin:  0 13px 0 0;
+}
+.box-contat{
+   margin: 180px;
+}
+.logo{
+   background-color:rgb(002, 000, 133) ;
+   width: 180px;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #ffffff;
+   margin: 15px 0 7px 164px;
+}
+
+.menu{
+   float: right;
+   display: block;
+   position: relative;
+   bottom: 50px;
+   right: 20px;
+   right: 190px;
+}
+
+.menu ul li{
+   float: left;
+   margin: 12px;
+}
+.menu li a{
+   color: #c0c0c0;
+   
+}
+.tela-principal{
+   background-color: black;
+   height: 100px;
+   width: 100%;
+}
