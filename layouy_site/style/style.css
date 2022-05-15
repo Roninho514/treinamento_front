@@ -45,6 +45,8 @@ header{
    float: left;
    margin: 16px 27px 0 0;
    padding-bottom:20px;
+   display: flex;
+   justify-content: center;
 }
 
 .menu-principal li a{
@@ -58,14 +60,30 @@ header{
 .sub-menu-1{
    visibility: hidden;
    display: block;
-   top: 50px;
+   top: 48px;
    position: absolute;
-   align-items: center;
    background-color: #020085;
    color: #9094C1;
-   margin-right: 20px;
 }
-.sub-menu-1 li{
+.sub-menu-1 li:hover > .sub-menu-2{
+   visibility: visible;
+}
+.sub-menu-2{
+   width: 107px;
+   height: 144px;
+   padding: 0;
+   display: block;
+   position: absolute;
+   background-color: #020085;
+   color: #9094C1;
+   padding: 13px;
+   margin: -24px 0px 0px 96px;
+   visibility: hidden;
+}
+.sub-menu-2 li{
+   margin-bottom: 19px;
+}
+.itens-submenu-1{
    padding: 8px 15px;
 }
 .container-slide{
@@ -135,6 +153,11 @@ header{
    justify-content: center;
    margin-left: 30px;
 }
+.lista-caixas li{
+   display: flex;
+   flex-direction: column;
+
+}
 .imagem-caixa{
    width:196px;
    height:163px;
@@ -145,10 +168,10 @@ header{
    align-items: center;
    margin-right: 35px;
 }
-.texto-boxes{
-   width: 85%;
+.lista-caixas p{
+   width: 70%;
    margin-top: 10px;
-   text-align: justify;
+   text-align: calc(231px-35px);
    color: #979797;
 }
 footer{
