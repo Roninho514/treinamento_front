@@ -22,7 +22,6 @@ header{
    margin: 180px;
 }
 .logo{
-   background-color:rgb(002, 000, 133) ;
    width: 180px;
    height: 80px;
    display: flex;
@@ -30,6 +29,10 @@ header{
    align-items: center;
    color: #ffffff;
    margin: 15px 0 7px 164px;
+}
+.logo img{
+   width: 129px;
+   height: 55px;
 }
 
 .menu{
