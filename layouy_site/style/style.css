@@ -107,14 +107,25 @@ header{
    justify-content: center;
 }
 .condicoes-imagem{
-   width: 325px;
+   width: 255px;
    height: 212px;
    color: #ffffff;
-   background: #020085;
+   background: #000000ea;
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 5px;
+   box-shadow: 5px 6px 18px #000000;
+   
+}
+.condicoes-imagem img{
+   width: 100%;
+   height: 100%;
+   transition: 400ms;
+}
+.condicoes-imagem img:hover{
+   opacity: 0.3;
+   transition: 400ms;
 }
 
 .condicoes-texto{
