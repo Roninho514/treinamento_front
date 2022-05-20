@@ -205,7 +205,31 @@ footer{
    margin-left: 15px;
    margin-top: 20px;
 }
-
+.botao-ativa-menu{
+   display: none;
+}
+@keyframes slideon {
+   0%{
+      transform: translateX(-365%);
+   }
+   100% {
+      transform: translateX(0%);
+   }
+}
+.bota-ativa-menu-desativado{
+   animation-name:slideon;
+   animation-duration: 600ms;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   right: 0;
+   width: 10%;
+   height: 10%;
+   border: none;
+   background: none;
+   margin-right: 5%;
+}
 @media screen and (max-width:1240px){
    .menu{
       right: 100px;
@@ -252,16 +276,26 @@ footer{
    .menu{
       display: none;
    }
+   @keyframes slidein {
+      0%{
+         transform: translateX(300px);
+      }
+      100% {
+         transform: translateX(0px);
+      }
+   }
    .container-menu-lateral{
+      animation-name: slidein;
+      animation-duration: 800ms;
+      display: none;
       position: fixed;
       top: 0;
       right: 0;
-      width: 220px;
+      width: 40%;
       height: 100%;
       padding-top: 10px;
       background: #1851bb;
       box-shadow: -5px -10px 10px 0 rgba(0,0,0,.4);
-      display: flex;
       justify-content: space-between;
       flex-direction: column;
    }
@@ -269,23 +303,26 @@ footer{
       display: flex;
       flex-direction: column;
       text-align: right;
+      margin-bottom: 80%;
    }
    .container-menu-lateral li{
       width: 100%;
       padding: 13%;
-      display: block;
    }
    .container-menu-lateral li a{
-      
+      padding: 15% 63% 14% 7%;
    }
    .container-menu-lateral li:hover{
       background-color: #020085;
    }
    header{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-
+      
+   }
+   .logo{
+      margin-left: 80%;
    }
    .menu-lateral{
       margin-top: 20%;
@@ -294,9 +331,34 @@ footer{
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      text-align: center;
    }
    .menu-lateral-contatos span{
       margin-bottom: 10px;
       color: #ffffff;
+   }
+   .botao-desativa-menu{
+      width: 30%;
+      height: 15%;
+      margin-left: -27%;
+      margin-top: 8%;
+      background: #1851bb;
+      border: none;
+      border-radius: 6px;
+   }
+   .bota-ativa-menu{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      right: 0;
+      width: 10%;
+      height: 10%;
+      border: none;
+      background: none;
+      margin-right: 5%;
+   }
+   .condicoes-imagem img{
+      pointer-events: none;
    }
 }
