@@ -99,6 +99,21 @@ header{
    width: 894px;
    height: 290px;
 }
+.botao-slide-esquerdo{ 
+   width: 60px;
+   height: 50px;
+   margin: 15% 0 0 3%;
+   background: url(/imagens/retroceder-esquerdo.png);
+   border: none;
+}
+.botao-slide-direito{
+   margin: 15% 3% 0 0;
+   float: right;
+   width: 60px;
+   height: 50px;
+   background:url(/imagens/avancar-direito.png);
+   border: none;
+}
 .container-condicoes{
    width: 100%;
    height: 220px;
@@ -216,20 +231,7 @@ footer{
       transform: translateX(0%);
    }
 }
-.bota-ativa-menu-desativado{
-   animation-name:slideon;
-   animation-duration: 600ms;
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   right: 0;
-   width: 10%;
-   height: 10%;
-   border: none;
-   background: none;
-   margin-right: 5%;
-}
+
 @media screen and (max-width:1240px){
    .menu{
       right: 100px;
@@ -252,9 +254,35 @@ footer{
    margin-bottom: -22px;
    margin-top: 43px;
 }
+.container-condicoes{
+   height: 45%;
+}
 }
 
 @media screen and (max-width: 820px){
+   .bota-ativa-menu-desativado{
+      animation-name:slideon;
+      animation-duration: 600ms;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      width: 10%;
+      height: 10%;
+      border: none;
+      background: none;
+      margin-right: 5%;
+   }
+   main{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+   }
+   .container-condicoes{
+      height: 25%;
+   }
    .condicoes-texto{
       text-align: justify;
       display: flex;
@@ -339,7 +367,7 @@ footer{
    }
    .botao-desativa-menu{
       width: 30%;
-      height: 15%;
+      height: 10%;
       margin-left: -27%;
       margin-top: 8%;
       background: #1851bb;
@@ -360,5 +388,57 @@ footer{
    }
    .condicoes-imagem img{
       pointer-events: none;
+   }
+   .container-boxes-destaque{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 46%;
+      margin-top: 40px;
+   }
+   .boxes-destaque{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+   }
+   .boxes-destaque ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .lista-caixas li{
+      align-items: center;
+      margin-bottom: 35px;
+   }
+   .menu-principal{
+      display: none;
+   }
+}
+@media screen and (max-width: 610px){
+   .botao-slide-esquerdo{ 
+      margin: 19% 0 0 3%;
+   }
+   .botao-slide-direito{ 
+      margin: 19% 0 0 3%;
+   }
+}
+@media screen and (max-width: 671px){
+   .container-condicoes{
+      height: 32%;
+   }
+}
+@media screen and (max-width: 500px){
+   .botao-slide-esquerdo{ 
+      margin: 25% 0 0 3%;
+   }
+   .botao-slide-direito{ 
+      margin: 25% 0 0 3%;
    }
 }
