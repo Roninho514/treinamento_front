@@ -253,14 +253,6 @@ footer{
    }
 }
 @media screen and (max-width:1240px){
-   .botao-slide-esquerdo{
-
-   }
-   .botao-slide-direito{
-
-   }
-}
-@media screen and (max-width:1240px){
    .menu{
       right: 100px;
    }
@@ -344,15 +336,15 @@ footer{
       animation-name: slidein;
       animation-duration: 800ms;
       display: none;
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 40%;
       height: 100%;
       padding-top: 10px;
       background: #1851bb;
-      box-shadow: -5px -10px 10px 0 rgba(0,0,0,.4);
-      justify-content: space-between;
+      box-shadow: -5px -10px 10px 0 rgb(0 0 0 / 40%);
+      justify-content: space-around;
       flex-direction: column;
       z-index: 4;
    }
