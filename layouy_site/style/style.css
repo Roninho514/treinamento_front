@@ -17,6 +17,7 @@ header{
 .contat-container span{
    color: #ffffff;
    margin:  0 13px 0 0;
+   
 }
 .box-contat{
    margin: 0 12% 0 0;
@@ -79,6 +80,7 @@ header{
    padding: 13px;
    margin: -24px 0px 0px 96px;
    visibility: hidden;
+   z-index: 8;
 }
 .sub-menu-2 li{
    margin-bottom: 19px;
@@ -97,21 +99,36 @@ header{
 .slide{
    width: 894px;
    height: 290px;
+   display: flex;
+   align-items: center;
 }
-.carrossel-item{
-   background: url(/imagens/foto-slide1.jpg);
+.slide img{
    width: 100%;
    height: 100%;
+}
+.carrossel-item{
+   width: 100%;
+   height: 100%;
+   display: none;
+}
+.slide-atual{
+   display: block;
+}
+.botoes{
+   display: flex;
+   width: 63%;
+   height: 61px;
+   position: absolute;
+   justify-content: space-between;
 }
 .botao-slide-esquerdo{ 
    width: 60px;
    height: 50px;
-   margin: 13% 0 0 0%;
    background: url(/imagens/retroceder-esquerdo.png);
    border: none;
 }
 .botao-slide-direito{
-   margin: 13% 0 0 62%;
+   float: right;
    float: right;
    width: 60px;
    height: 50px;
@@ -235,7 +252,14 @@ footer{
       transform: translateX(0%);
    }
 }
+@media screen and (max-width:1240px){
+   .botao-slide-esquerdo{
 
+   }
+   .botao-slide-direito{
+
+   }
+}
 @media screen and (max-width:1240px){
    .menu{
       right: 100px;
@@ -320,7 +344,7 @@ footer{
       animation-name: slidein;
       animation-duration: 800ms;
       display: none;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       width: 40%;
@@ -330,6 +354,7 @@ footer{
       box-shadow: -5px -10px 10px 0 rgba(0,0,0,.4);
       justify-content: space-between;
       flex-direction: column;
+      z-index: 4;
    }
    .container-menu-lateral ul{
       display: flex;
@@ -425,24 +450,53 @@ footer{
       display: none;
    }
 }
-@media screen and (max-width: 610px){
-   .botao-slide-esquerdo{ 
-      margin: 19% 0 0 3%;
-   }
-   .botao-slide-direito{ 
-      margin: 19% 0 0 3%;
-   }
-}
 @media screen and (max-width: 671px){
    .container-condicoes{
       height: 32%;
    }
 }
-@media screen and (max-width: 500px){
-   .botao-slide-esquerdo{ 
-      margin: 25% 0 0 3%;
+@media screen and (max-width: 1360px){
+   .botoes{
+      width: 66%;
    }
-   .botao-slide-direito{ 
-      margin: 25% 0 0 3%;
+}
+@media screen and (max-width: 1310px){
+   .botoes{
+      width: 68%;
+   }
+}
+@media screen and (max-width: 1246px){
+   .botoes{
+      width: 74%;
+   }
+}
+@media screen and (max-width: 1241px){
+   .botoes{
+      width: 63%;
+   }
+}
+@media screen and (max-width: 1200px){
+   .botoes{
+      width: 65%;
+   }
+}
+@media screen and (max-width: 1150px){
+   .botoes{
+      width: 70%;
+   }
+}
+@media screen and (max-width: 1165px){
+   .botoes{
+      width: 75%;
+   }
+}
+@media screen and (max-width: 980px){
+   .botoes{
+      width: 82%;
+   }
+}
+@media screen and (max-width: 788px){
+   .botoes{
+      width: 100%;
    }
 }

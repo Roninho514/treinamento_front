@@ -4,8 +4,11 @@ const $desativaMenu = document.getElementById('desativaMenu');
 const $botaoSlideDireito = document.getElementById('botaoSlideDireito');
 const $botaoSlideEsquerdo = document.getElementById('botaoSlideEsquerdo');
 const $carrosselItem = document.getElementById('carrosselItem');
+const $slides = document.querySelectorAll(".carrossel-item");
+const $slideclasse = document.getElementsByClassName("slide-atual");
 let posicaoSlide = 0;
-let slides = [1,2];
+let n = 0
+
 $ativaMenu.addEventListener("click", function(){
    $menuLateral.style.display = "flex";
    $ativaMenu.style.display = "none";
@@ -18,14 +21,18 @@ $desativaMenu.addEventListener("click", function(){
 })
 
 $botaoSlideDireito.addEventListener("click",function(){
-   posicaoSlide = passaSildeDireito(posicaoSlide,slides);
-   slideAtual = slides[posicaoSlide];
-   $carrosselItem.style.background = `url(/imagens/foto-slide${slideAtual}.jpg)`;
+   slideAtual = $slides[posicaoSlide];
+   slideAtual.classList.remove("slide-atual");
+   posicaoSlide = passaSildeDireito(posicaoSlide,$slides);
+   slideAtual = $slides[posicaoSlide];
+   slideAtual.classList.add("slide-atual");
 })
 $botaoSlideEsquerdo.addEventListener("click",function(){
-   posicaoSlide = passaSildeEsquerdo(posicaoSlide,slides);
-   slideAtual = slides[posicaoSlide];
-   $carrosselItem.style.background = `url(/imagens/foto-slide${slideAtual}.jpg)`;
+   slideAtual = $slides[posicaoSlide];
+   slideAtual.classList.remove("slide-atual");
+   posicaoSlide = passaSildeEsquerdo(posicaoSlide,$slides);
+   slideAtual = $slides[posicaoSlide];
+   slideAtual.classList.add("slide-atual");
 })
 
 function passaSildeDireito(posicaoSlide,slides){
