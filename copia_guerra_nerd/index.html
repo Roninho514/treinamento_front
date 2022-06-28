@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <title>Loja online de guerra nerd</title>
+</head>
+<body>
+   <header>
+      <div class="container-cabecalho">
+         <div class="coluna-cabecalho-1">
+            <form class="container-pesquisa">
+               <input type="search" class = "campo-pesquisa" id="" placeholder="Buscar">
+               <button class="botao-pesquisa">
+                  <img src="imagens/icone-lupa.png" alt="icone de pesquisar">
+               </button>
+            </form>
+         </div>
+         <div class="coluna-cabecalho-2"><img src="imagens/logo_site.jpg" alt="logo do site" class="logo"></div>
+         <div class="coluna-cabecalho-3">
+            <div class="container-acesso">
+               <div class="acesso">
+                  <a href="#">Cadastre-se</a>
+                  <a href="#">Iniciar sessão</a>
+               </div>
+               <div class="carrinho-compras">
+                     <a href="#">
+                        <img src="imagens/icone-carrinho.png" alt="icone carrinho">
+                     </a>
+                  <div class="caixa-quantidade">
+                     <span>0</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <ul class="menu-principal">
+         <li class="lista-menu"><a href="#">Inicio</a></li>
+         <li class="lista-menu produtos"><a href="#" class="link-menu">Produtos</a>
+            <ul class="sub-menu-1">
+               <li class="lista-submenu-1">
+                  <a href="#" class="link-submenu-1 camisas">Camisetas
+                     <span>></span>
+                  </a>
+                  <ul class="sub-menu-2">
+                     <li class="lista-sub-menu-2"><a href="#" class="link-sub-menu-2">Animes</a></li>
+                     <li class="lista-sub-menu-2"><a href="#" class="link-sub-menu-2">Filmes e séries</a></li>
+                     <li class="lista-sub-menu-2"><a href="#" class="link-sub-menu-2">Ver tudo</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li class="lista-menu"><a href="#">Quem somos</a></li>
+         <li class="lista-menu"><a href="#">Contatos</a></li>
+      </ul>
+   </header>
+      <section class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagens/1-slide.jpg" alt="slide-1"></div>   
+            <div class="swiper-slide"><img src="imagens/2-slide.jpg" alt="slide-2"></div>
+            <div class="swiper-slide"><img src="imagens/3-slide.jpg" alt="slide-3"></div>
+            <div class="swiper-slide"><img src="imagens/4-slide.jpg" alt="slide-4"></div>
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
+      </section>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="index.js"></script>
+</body>
+</html>
