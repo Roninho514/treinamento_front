@@ -1,0 +1,132 @@
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-perfil-info{
+    width: 100%;
+    height: 78%;
+    display: flex;
+    justify-content: start;
+}
+
+.perfil-info{
+    width: 60%;
+    height: 100%;
+    background: #1B2226;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.imagem-capa{
+    width: 100%;
+}
+
+.foto-perfil{
+    width: 10%;
+    height: 21%;
+    position: absolute;
+    padding-top: 13%;
+    padding-left: 1%;
+}
+
+.info-gerais{
+    margin-top: 9%;
+    margin-left: 3%;
+    font-family: 'Roboto' , sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-gerais p {
+    margin-top: 0.5rem;
+}
+
+.nome{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.texto-destaque-cinza{
+    color : rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.texto-destaque-azul{
+    color: #70B5F9;
+    font-size: 14px;
+}
+
+.subtitulo{
+    color:  rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+.botao-principal{
+    width: 128px;
+    height: 32px;
+
+
+    background: #70B5F9;
+    border-radius: 16px;
+}
+
+.local{
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.botao-secundario{
+    width: 128px;
+    height: 32px;
+
+
+    border: 1px solid #70B5F9;
+    color: #70B5F9;
+    background: transparent;
+    border-radius: 16px;
+}
+
+.botoes-controle{
+    margin-top: 0.2rem;
+}
+
+.colum-2{
+    margin-right: 7rem;
+    width: 24%;
+}
+
+.colum-2 li{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.icone-empresa{
+    width: 32px;
+    height: 32px;
+    margin-right: 2%;
+}
+
+.info-cont{
+    margin: 0 0.2rem 0 0.2rem;
+}
+.info-cont::before{
+    content: "\00B7";
+}
+
+.seguidores{
+    margin: 0.2rem 0 0.5rem 0;
+}
