@@ -1,0 +1,103 @@
+.app-name {
+  width: calc(100% - 20px);
+}
+
+.exit{
+  color: white;
+  text-decoration: none;
+}
+
+.container{
+  width: 95%;
+  height: calc(100% - 80px);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 245);
+}
+
+.dummy{
+  width: 33%;
+  height: 100%;
+  float: left;
+  overflow: scroll;
+}
+
+.table {
+  width: 100%;
+}
+
+.message {
+  padding: 8px 8px 8px 8px;
+  min-width: calc(100%/3);
+  max-width: calc(80%);
+  width: fit-content;
+  margin: 8px;
+  border-radius:8px;
+}
+
+.messages {
+  width: 100%;
+  height: 100%;
+}
+
+
+.message-line.me {
+  justify-content: flex-end;
+  margin-left: 0px;
+}
+
+.message.me {
+  background-color: lightgreen;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.message-content {
+  word-wrap: break-word;
+}
+
+.message-line.other {
+  justify-content: flex-start;
+  margin-right: 0px;
+}
+
+.message.other {
+  background-color: rgb(201, 214, 221);
+}
+
+.footer{
+  margin-bottom: 0;
+}
+
+.chat {
+  width: 66%;
+  height: 100%;
+  float: right;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: left;
+  width: 100%;
+}
+
+.input {
+  width: calc(100% - 68px);
+}
+
+.container-chat{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}

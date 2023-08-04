@@ -1,0 +1,46 @@
+.topnav{
+  background-color: #3a3939;
+  overflow: hidden;
+
+}
+
+.topnav a{
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.active {
+  background-color: rgb(32,186,32);
+  color: #fff;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+

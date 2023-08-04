@@ -1,0 +1,12 @@
+.container-counter  {
+  display: flex;
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  left: 50%;
+  right: 50%;
+  top: 0;
+}

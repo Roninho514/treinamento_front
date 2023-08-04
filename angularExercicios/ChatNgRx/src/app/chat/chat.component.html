@@ -1,0 +1,61 @@
+<mat-toolbar color="primary">
+  <span class="app-name">Signal-R Chat</span>
+  <a class="exit" href="/">X</a>
+</mat-toolbar>
+<div class="container">
+  <div class="dummy">
+    <table mat-table class="mat-elevation-z8 table">
+      <ng-container matColumnDef="name" >
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+      </ng-container>
+
+      <ng-container matColumnDef="emailId">
+        <th mat-header-cell *matHeaderCellDef>EmailId</th>
+      </ng-container>
+
+      <ng-container matColumnDef="phoneNumber">
+        <th mat-header-cell *matHeaderCellDef>PhoneNumber</th>
+      </ng-container>
+
+      <ng-container matColumnDef="updatedDateTime">
+        <th mat-header-cell  *matHeaderCellDef>UpdateDateTime</th>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="['name', 'emailId', 'phoneNumber', 'updatedDateTime']"></mat-header-row>
+
+      <mat-row *matRowDef="let row; columns: ['name', 'emailId', 'phoneNumber', 'updatedDateTime']"></mat-row>
+    </table>
+  </div>
+  <div class="container-chat">
+    <div class="chat">
+      <div class="messages">
+        <ng-template>
+          <div class="message-line me">
+            <div class="message me">
+              <div class="user-name me"></div>
+              <div class="message-content"></div>
+            </div>
+            <div class="message-line other">
+              <div class="message other">
+                <div class="user-name other"></div>
+                <div class="menssage-content"></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+    <div class="footer">
+      <form class="form">
+          <mat-form-field class="input">
+            <input matInput placeholder="message" >
+          </mat-form-field>
+          <button  color="primary" class="button" mat-mini-fab>
+            <mat-icon>send</mat-icon>
+          </button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
