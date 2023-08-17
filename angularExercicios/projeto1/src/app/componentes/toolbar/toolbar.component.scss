@@ -20,8 +20,14 @@
 }
 
 .active {
-  background-color: rgb(32,186,32);
   color: #fff;
+  a{
+    color: #fff;
+  }
+}
+
+a:hover, a:active {
+  color: lightgray;
 }
 
 .example-spacer {

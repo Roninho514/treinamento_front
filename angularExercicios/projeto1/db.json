@@ -1,0 +1,97 @@
+{
+  "produtos": [
+    {
+      "nome": "Teclado Gamer",
+      "descricao": "Teclado gamer RGB multi-devices",
+      "imagemUrl": "https://m.media-amazon.com/images/I/61nvk16RZrL._AC_SX679_.jpg",
+      "preco": "150",
+      "estoque": 12
+    },
+    {
+      "nome": "Mouse Gamer",
+      "descricao": "Mouse gamer RGB 1200dpi",
+      "imagemUrl": "https://m.media-amazon.com/images/I/51H+ecG+GgL._AC_SX679_.jpg",
+      "preco": "59",
+      "estoque": 56
+    },
+    {
+      "nome": "Monitor Ultra Wide",
+      "descricao": "Monitor Ultra Wide 29 polegadas IPS 144ms",
+      "imagemUrl": "https://m.media-amazon.com/images/I/51Ufkd4a13L._AC_SX679_.jpg",
+      "preco": "1699",
+      "estoque": 5
+    },
+    {
+      "nome": "Notebook Gamer",
+      "descricao": "Notebook Gamer com placa dedicada",
+      "imagemUrl": "https://m.media-amazon.com/images/I/61tegGxILZL._AC_SX679_.jpg",
+      "preco": "5000",
+      "estoque": 2
+    }
+
+],
+
+"clientes": [
+  {
+    "nome": "Maria Santos",
+    "sexo": "f",
+    "idade": 29,
+    "salario": 4000
+  },
+  {
+    "nome": "João Silva",
+    "sexo": "m",
+    "idade": 42,
+    "salario": 7000
+  },
+  {
+    "nome": "Ana Costa",
+    "sexo": "f",
+    "idade": 31,
+    "salario": 5500
+  },
+  {
+    "nome": "José Oliveira",
+    "sexo": "m",
+    "idade": 26,
+    "salario": 3500
+  },
+  {
+    "nome": "Paula Alves",
+    "sexo": "f",
+    "idade": 35,
+    "salario": 6000
+  },
+  {
+    "nome": "Carlos Rodrigues",
+    "sexo": "m",
+    "idade": 38,
+    "salario": 8000
+  },
+  {
+    "nome": "Beatriz Santos",
+    "sexo": "f",
+    "idade": 27,
+    "salario": 4500
+  },
+  {
+    "nome": "Rafaela Souza",
+    "sexo": "f",
+    "idade": 33,
+    "salario": 7000
+  },
+  {
+    "nome": "Lucas Almeida",
+    "sexo": "m",
+    "idade": 29,
+    "salario": 4200
+  },
+  {
+    "nome": "André Costa",
+    "sexo": "m",
+    "idade": 41,
+    "salario": 9000
+  }
+]
+
+}

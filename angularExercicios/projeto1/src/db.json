@@ -1,0 +1,9 @@
+{
+  "produtos": {
+    "nome": "Teclado Gamer",
+    "descricao": "Teclado gamer RGB multi-devices",
+    "imagemUrl": "",
+    "preco": "150",
+    "estoque": 12
+  }
+}

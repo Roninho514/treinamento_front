@@ -1,4 +1,16 @@
 import { Component } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { filter, map, of, tap } from 'rxjs';
+import { HomeService } from '../services/home.service';
+
+export interface Pessoa {
+  nome: string;
+  idade: number;
+  sexo: string;
+  salario: string;
+}
+
+export interface Pessoas extends Array<Pessoa>{}
 
 @Component({
   selector: 'app-home',
@@ -6,30 +18,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  clientes= [
-    {
-      nome:'Alexandre',
-      sexo: 'm',
-      idade: 20,
-      salario: '10000'
-    },
-    {
-      nome:'Fernanda',
-      sexo: 'f',
-      idade: 25,
-      salario: '15000'
-    },
-    {
-      nome:'Ana',
-      sexo: 'F',
-      idade: 30,
-      salario: '20000'
-    }
-    ,{
-      nome:'Luiz',
-      sexo: 'm',
-      idade: 23,
-      salario: '30000'
-    }
-  ]
+  /* frutas: string[] = [];
+  frutas$ = of('banana', 'morango', 'abacaxi', 'pera', 'melancia') ; */
+
+  constructor( private homeService: HomeService ){
+    /* this.frutas$.pipe(
+      tap(console.log),
+      map(fruta => fruta.toUpperCase()),
+      tap(console.log),
+      filter(fruta => fruta.startsWith('B') || fruta.startsWith('M'))
+    ).subscribe(resultado =>{
+      this.frutas.push(resultado);
+    }); */
+  }
+
+  clientes!: Pessoas;
+  displayedColumns: string[] = ['nome', 'sexo', 'idade', 'salario'];
+  dataSource !: MatTableDataSource<any>;
+
+  ngOnInit(){
+    this.homeService.getClientes()
+    .subscribe(clientes =>{
+      this.clientes = clientes;
+      this.dataSource = new MatTableDataSource(this.clientes);
+    })
+  }
 }
