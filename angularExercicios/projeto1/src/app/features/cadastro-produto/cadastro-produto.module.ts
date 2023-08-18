@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CadastroProdutoRoutingModule } from './cadastro-produto-routing.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,11 @@ import { ListagemComponent } from './listagem/listagem.component';
   ],
   imports: [
     CommonModule,
-    CadastroProdutoRoutingModule
+    CadastroProdutoRoutingModule,
+    MatCardModule,
+    MatButtonModule
+
+
   ]
 })
 export class CadastroProdutoModule { }
