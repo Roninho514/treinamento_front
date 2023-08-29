@@ -1,1 +1,18 @@
-<p>cadastro works!</p>
+<form class="example-form">
+    <mat-form-field  class="example-full-width">
+        <input matInput placeholder="Titulo do produto"  type="text" [(ngModel)]="nome" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <mat-form-field  class="example-full-width">
+        <input matInput placeholder="Digite um preço"  type="text"[(ngModel)]="preco" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <mat-form-field  class="example-full-width">
+        <input type="number" matInput placeholder="Digite o estoque"  [(ngModel)]="estoque" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field  class="example-full-width">
+        <mat-label>Descrição</mat-label>
+        <textarea matInput placeholder="Descreva o produto" [(ngModel)]="descricao" [ngModelOptions]="{standalone: true}"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button mat-button color="primary" (click)="salvarProduto()">Salvar</button>
+</form>

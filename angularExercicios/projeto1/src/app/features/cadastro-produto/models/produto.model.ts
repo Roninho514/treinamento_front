@@ -2,7 +2,7 @@ export interface produto{
   id: number,
   nome: string,
   descricao: string,
-  imagemUrl: string,
+  imagemUrl?: string,
   preco: string,
   estoque: number
 }

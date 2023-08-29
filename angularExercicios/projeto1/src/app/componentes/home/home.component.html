@@ -30,7 +30,7 @@
   <!-- Symbol Column -->
   <ng-container matColumnDef="salario">
     <th mat-header-cell *matHeaderCellDef> Salario </th>
-    <td mat-cell *matCellDef="let element"> {{element.salario | currency: 'BRL'}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.salario }} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
