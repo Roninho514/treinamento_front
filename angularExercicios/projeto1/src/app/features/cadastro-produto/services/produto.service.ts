@@ -32,5 +32,14 @@ export class ProdutoService {
     return this.http.put(`${this.baseUrl}produtos/${produto.id}`, produto)
   }
 
+  createProduct(produto : produto): Observable<any>{
+    return this.http.post(`${this.baseUrl}produtos`, produto)
+  
+  }
 
+  deleteProduct(produto: produto): Observable<any>{
+    return this.http.delete(`${this.baseUrl}produtos/${produto.id}`)
+  }
 }
+
+

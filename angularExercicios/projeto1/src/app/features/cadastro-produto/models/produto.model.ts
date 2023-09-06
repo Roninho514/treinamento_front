@@ -1,5 +1,5 @@
 export interface produto{
-  id: number,
+  id?: number,
   nome: string,
   descricao: string,
   imagemUrl?: string,

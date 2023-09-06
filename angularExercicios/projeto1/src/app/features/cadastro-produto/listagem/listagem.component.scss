@@ -1,7 +1,12 @@
-.example-card {
-  max-width: 300px;
-  cursor: pointer;
+.list-container{
+  height: 100%;
+}
 
+.example-card {
+  max-width: 342px;
+    cursor: pointer;
+    margin: 26px;
+    height: 51%;
 }
 
 .example-header-image {
@@ -17,10 +22,15 @@ img{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  flex-wrap: wrap;
 }
 
 .preco {
   font-size: 20px;
   color: rgb(28,177,28);
+}
+
+.add-button {
+  justify-content: flex-start;
+  margin: 1rem;
 }

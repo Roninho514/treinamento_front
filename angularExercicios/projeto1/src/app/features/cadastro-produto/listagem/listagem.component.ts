@@ -26,4 +26,14 @@ export class ListagemComponent implements OnInit {
     this.route.navigate(['produto', 'editar-produto', produto.id]);
   }
 
+  public criarProduto(){ 
+    this.route.navigate(['produto', 'novo-produto']);
+  }
+
+  public deletarProduto(produto:produto){
+    this.produtoService.deleteProduct(produto).subscribe(produto =>{
+      this.route.navigate(['produto']);
+    })
+  }
+
 }

@@ -1,18 +1,23 @@
-<form class="example-form">
+<h1 class="title">{{title}}</h1>
+<form class="example-form"  [formGroup]="formCadastroProduto">
     <mat-form-field  class="example-full-width">
-        <input matInput placeholder="Titulo do produto"  type="text" [(ngModel)]="nome" [ngModelOptions]="{standalone: true}">
+        <input matInput placeholder="Titulo do produto"  type="text" formControlName="nome">
+        <mat-error>Favor preencha o campo</mat-error>
     </mat-form-field>
     <mat-form-field  class="example-full-width">
-        <input matInput placeholder="Digite um preço"  type="text"[(ngModel)]="preco" [ngModelOptions]="{standalone: true}">
+        <input matInput placeholder="Digite um preço"  type="text" formControlName="preco">
+        <mat-error>Favor preencha o campo</mat-error>
     </mat-form-field>
     <mat-form-field  class="example-full-width">
-        <input type="number" matInput placeholder="Digite o estoque"  [(ngModel)]="estoque" [ngModelOptions]="{standalone: true}">
+        <input type="number" matInput placeholder="Digite o estoque" formControlName="estoque" >
+        <mat-error>Favor preencha o campo</mat-error>
     </mat-form-field>
 
     <mat-form-field  class="example-full-width">
         <mat-label>Descrição</mat-label>
-        <textarea matInput placeholder="Descreva o produto" [(ngModel)]="descricao" [ngModelOptions]="{standalone: true}"></textarea>
+        <textarea matInput placeholder="Descreva o produto" formControlName="descricao"></textarea>
+        <mat-error>Favor preencha o campo</mat-error>
     </mat-form-field>
 
-    <button mat-raised-button mat-button color="primary" (click)="salvarProduto()">Salvar</button>
+    <button mat-raised-button mat-button color="primary" (click)="salvarProduto()" [disabled]="!formCadastroProduto.valid">Salvar</button>
 </form>
